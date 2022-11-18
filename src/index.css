@@ -1,13 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+:root{
+  --main: #1abc9c;
+  --second:#2C3E50;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat' ;
+}
+.btn-main{
+  background-color: var(--main);
+  color: #fff;
+}
+.bg-main {
+  background-color: var(--main);
+}
+.bg-second {
+  background-color: var(--second);
+}
+.text-main {
+  color: var(--main);
+}
+.text-second {
+  color: var(--second);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: var(--main);
+}
+.nav-link:focus{
+  color: #fff;
+  background-color:var(--main);
+  border-radius: 10px;
+}
+.main-head{
+  font-size: 64px;
+}
+.h-line{
+  position: relative;
+}
+.inline{
+  position: relative;
+  height: 4px;
+  width: 100px;
+  margin: 35px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.icon-box{
+  width: 50px;
+  height: 50px;
+  border:2px solid #fff;
+  cursor: pointer;;
+}
+.icon-box:focus{
+  box-shadow:0 0 0 0.2rem rgb(248 249 250 / 50%);
+}
+.icon-box:hover{
+  background-color: #fff;
+  color: #2C3E50;
+}
+.head{
+  font-size: 48px;
+}
+.overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.overlay:hover{
+  opacity: 0.9;
+}
+.footer{
+  font-size: 12px;
+}
+label{
+  margin: 10px 5px;
+}
+input,textarea{
+  padding: 5px;
+  font-size: larger;
+  border: none;
+}
+input:focus-visible,textarea:focus-visible{
+  outline: none;
+}
+input::placeholder,textarea::placeholder{
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hrz-line{
+  width: 100%;
+  height: 1px;
+  background-color: #eaeaea;
+  top: 100%;
+}
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.over{
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
